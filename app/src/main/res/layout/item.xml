@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEDAD2"
+    android:layout_margin="20dp"
+    app:circularflow_radiusInDP="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        android:textSize="18sp"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/google_sans_bold"/>
+
+    <TextView
+        android:id="@+id/ToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to do the work"
+        android:layout_marginTop="8dp"
+
+
+        android:padding="6dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/google_sans_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+</androidx.constraintlayout.widget.ConstraintLayout>
